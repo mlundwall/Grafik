@@ -1,6 +1,5 @@
 # Test interaktiv grafik med Tkinter
 # Mads Lundwall 2022
-
 from tkinter import *
 
 
