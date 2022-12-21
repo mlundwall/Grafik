@@ -1,0 +1,1 @@
+Grafik - nu med tryk og output til fil
