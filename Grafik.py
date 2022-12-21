@@ -7,10 +7,10 @@ import sys
 def drawline(event):
     # Vi har modtaget et musetryk
     # print(event.type)
-    if str(event.type) == '4':  # 'ButtonPress':
+    if str(event.type) == '4' or str(event.type) == 'ButtonPress':
         # Når vi trykker husker vi positonen
         canvas.old_coords = event.x, event.y
-    elif str(event.type) == '5':  # 'ButtonRelease':
+    elif str(event.type) == '5' or str(event.type) == 'ButtonRelease':
         # Når vi løfter, tegner vi linjen
         x, y = event.x, event.y
         x1, y1 = canvas.old_coords
