@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 *.vsidx
 .vs/Grafik/v17/.suo
+*.xml
