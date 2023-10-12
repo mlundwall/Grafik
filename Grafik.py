@@ -3,7 +3,6 @@
 from tkinter import *
 import sys
 
-
 def drawline(event):
     # Vi har modtaget et musetryk
     # print(event.type)
@@ -16,7 +15,6 @@ def drawline(event):
         x1, y1 = canvas.old_coords
         canvas.create_line(x, y, x1, y1)
 
-
 def knaptryk():
     label.config(text="Grafik - nu med tryk")
     original_stdout = sys.stdout        # SReference til standard output
@@ -26,7 +24,6 @@ def knaptryk():
         print(label.cget("text") +
               " og output til fil")     # cget == hent config-variabel, her text
         sys.stdout = original_stdout    # Reset the standard output to its original value
-
 
 if __name__ == '__main__':
     # Vi kører det som "hovedprogram", dvs eksekverer dette skript - ie. vi importerer det ikke
